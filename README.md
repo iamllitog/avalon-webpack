@@ -1,5 +1,5 @@
 # avalon2-webpack2-spa
->该项目不直接修改avalon2源码，只是在其基础上扩展。[演示地址](https://hmhao.github.io/avalon2-webpack2-spa/)
+>个人项目 学习并转自https://github.com/hmhao/avalon2-webpack2-spa
 
 ## 说明
 * 整合avalon2和webpack2，支持webpack热更新
@@ -26,15 +26,15 @@ export default new Router({
     path: '/router',
     title: '嵌套路由',
     component: RouterPanel,
-    children: [{ 
-      path: 'foo', 
-      component: Foo 
-    }, { 
-      path: 'bar', 
-      component: Bar,  
-      children: [{ 
-          path: 'baz', 
-          component: Baz 
+    children: [{
+      path: 'foo',
+      component: Foo
+    }, {
+      path: 'bar',
+      component: Bar,
+      children: [{
+          path: 'baz',
+          component: Baz
       }]
     }]
   }]
